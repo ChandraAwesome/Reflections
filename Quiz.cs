@@ -36,7 +36,7 @@ namespace ConsoleApp2
             Console.WriteLine("The Closest Even Digit Number of the given input is "+nearnumber);
         }
 
-        private static bool FindEvenDigitsinNumber(int number)
+        public static bool FindEvenDigitsinNumber(int number)
         {
             foreach(char digit in number.ToString())
             {
