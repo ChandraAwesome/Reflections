@@ -11,32 +11,32 @@ namespace ConsoleApp2
         public static void FindtheNumber()
         {
             Console.WriteLine("Enter the Number");
-            int N = Convert.ToInt32(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
 
-            int closenumber = N;
+            int nearnumber = n;
 
-            if(N<0)
+            if(n<0)
             {
-                closenumber = -closenumber;
+                nearnumber = -nearnumber;
             }
             while(true)
             {
-                closenumber++;
+                nearnumber++;
 
-                if(FindEvenDigitNumber(closenumber))
+                if(FindEvenDigitsinNumber(nearnumber))
                 {
                     break;
                 }
             }
 
-            if(N<0)
+            if(n<0)
             {
-                closenumber=-closenumber;
+                nearnumber=-nearnumber;
             }
-            Console.WriteLine("The Closest Even Digit Number of the given input is "+closenumber);
+            Console.WriteLine("The Closest Even Digit Number of the given input is "+nearnumber);
         }
 
-        private static bool FindEvenDigitNumber(int number)
+        private static bool FindEvenDigitsinNumber(int number)
         {
             foreach(char digit in number.ToString())
             {
